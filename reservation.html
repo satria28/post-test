@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function kembali(){
+            location.href="index.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="res-page">
+        <img src="img/back.png" alt="back.png" id="bck" onclick="kembali();">
+        <div class="abt-konten">
+        <h1 id="res-jd">Reservation</h1>
+        <div class="isi">
+            <form action="index.html" method="post">
+            <input type="text" name="user" id="user" placeholder="input your name" class="full">
+            <input type="email" name="email" id="email" placeholder="input your email" class="full">
+            <input type="text" name="phone" id="phone" placeholder="Phone Number" class="full-ag">
+            <select name="country" id="country" class="full-bg">
+                <option value="none">Country</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="english">English</option>
+                <option value="us">United State</option>
+            </select>
+            <textarea name="commentar" rows="10" cols="30" id="comen" placeholder="Explain about your trip"></textarea>
+            <input type="submit" value="submit" class="btn-sub">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
